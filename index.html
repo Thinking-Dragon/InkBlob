@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="colour.js" defer></script>
+    <script src="size.js" defer></script>
+    <script src="draw.js" defer></script>
+</head>
+<body>
+    <input type="color" id="colour" name="colour" value="#646464" onchange="updateColour(this)">
+    <input type="range" min="1" max="20" name="size" id="size" value="3" onchange="updatePenSize(this)"><br>
+    <canvas id="drawing" width="800" height="800" style="touch-action: none;"></canvas>
+</body>
+</html>
